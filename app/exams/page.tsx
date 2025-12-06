@@ -58,7 +58,7 @@ export default function ExamUI_Yoga() {
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState<Record<number, number>>({});
   const [review, setReview] = useState<Record<number, boolean>>({});
-  const [timeLeft, setTimeLeft] = useState(20 * 60); // 20 minutes by default
+  const [timeLeft, setTimeLeft] = useState(15 * 60); // 20 minutes by default
 
   // Timer
   useEffect(() => {
