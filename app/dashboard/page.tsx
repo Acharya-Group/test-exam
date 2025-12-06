@@ -16,10 +16,10 @@ export default function Dashboard() {
   });
 
   const tabs = [
-    { label: "All", count: 3, color: "bg-[#7B61FF]" },
+    { label: "All", count: 0, color: "bg-[#7B61FF]" },
     { label: "Yet To Start", count: 1, color: "bg-[#FFC700]" },
     { label: "Resume", count: 0, color: "bg-[#00C2FF]" },
-    { label: "Completed", count: 2, color: "bg-[#00D181]" },
+    { label: "Completed", count: 0, color: "bg-[#00D181]" },
     { label: "Expired", count: 0, color: "bg-[#FF5A5A]" },
     { label: "Terminated", count: 0, color: "bg-[#FF3D3D]" },
   ];

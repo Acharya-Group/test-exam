@@ -35,7 +35,7 @@ export default function Review() {
 
         <ul className="list-disc ml-6 space-y-1 text-sm">
           <li>Welcome to Online Exam for Mock Exam 2025</li>
-          <li>Exam has Total 25 Questions</li>
+          <li>Exam has Total 15 Questions</li>
           <li>Total Time for Exam is 15 Minutes</li>
           <li>Negative Marking Exam : No</li>
         </ul>
