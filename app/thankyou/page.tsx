@@ -83,7 +83,7 @@ function ThankYouPage() {
 
         <div className="text-center mt-6">
           <button
-            onClick={() => router.push("/")}
+            onClick={() => router.push("https://msplyoga.com")}
             className="bg-blue-600 text-white px-6 py-2 rounded shadow"
           >
             Continue
