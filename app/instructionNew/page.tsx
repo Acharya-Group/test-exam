@@ -11,6 +11,10 @@ export default function Dashboard() {
     // Popup states for both Capture buttons
     const [showPopup1, setShowPopup1] = useState(false);
     const [showPopup2, setShowPopup2] = useState(false);
+     function popupbtn() {
+        setShowPopup1(false);
+        router.push("/review"); 
+    }
 
     const today = new Date().toLocaleDateString("en-US", {
         day: "numeric",
@@ -33,10 +37,7 @@ export default function Dashboard() {
                             </h2>
 
                             <button
-                                onClick={() => {
-                                    setShowPopup1(false);
-                                    setShowPopup2(false);
-                                }}
+                                onClick={() => popupbtn()}
                                 className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded"
                             >
                                 Proceed
@@ -89,7 +90,7 @@ export default function Dashboard() {
                         <div className="flex justify-center gap-10 mt-12">
                             {/* Block 1 */}
                             <div className="flex flex-col items-center">
-                                <h3 className="text-center text-green-700 font-semibold text-xl">Show Your ID Card/Photo Identity</h3>
+                                <h3 className="text-center text-green-700 font-semibold text-xl">Capture face</h3>
                                 <div className="bg-gray-300 mt-4">
                                     <Image height={300} width={300} src="/images/man.webp" alt="avatar" />
                                 </div>
@@ -104,19 +105,11 @@ export default function Dashboard() {
 
                             {/* Block 2 */}
                             <div className="flex flex-col items-center">
-                                <h3 className="text-center text-green-700 font-semibold text-xl">Captured Photo Identity</h3>
+                                <h3 className="text-center text-green-700 font-semibold text-xl">Captured face</h3>
                                 <div className="bg-gray-300 mt-4">
                                     <Image height={300} width={300} src="/images/man.webp" alt="avatar" />
                                 </div>
-
-                                <button
-                                    onClick={() => setShowPopup2(true)}
-                                    className="bg-green-600 px-4 mt-4 text-white font-semibold py-1 rounded-xl"
-                                >
-                                    Capture
-                                </button>
                             </div>
-
                         </div>
                     </div>
                 </div>
