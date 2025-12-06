@@ -35,10 +35,14 @@ export default function Dashboard() {
             <h2 className="font-bold text-green-800 text-lg">Mock Exam 2025</h2>
 
             <div className="text-sm mt-3 space-y-1">
-              <p>Available from: Nov 3 2025</p>
-              <p>Available until: Nov 3 2025</p>
+              <p>
+                Available from: {new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+              </p>
+              <p>
+                Available until: {new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+              </p>
               <p>Time Zone: India Standard Time</p>
-              <p>Questions: 25</p>
+              <p>Questions: 15</p>
               <p>Duration: 15 min</p>
             </div>
 
@@ -78,7 +82,7 @@ export default function Dashboard() {
       {showModal && (
         <div className="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white w-[90%] max-w-md rounded-lg shadow-lg p-6 relative">
-            
+
             {/* CLOSE BUTTON */}
             <button
               onClick={() => setShowModal(false)}
@@ -94,7 +98,7 @@ export default function Dashboard() {
             <div className="mt-4 space-y-2 text-gray-800">
               <p><strong>Exam Name:</strong> Mock Exam 2025</p>
               <p><strong>Candidate ID:</strong> YE220159780</p>
-              <p><strong>Candidate Name:</strong> Ritika Nain</p>
+              <p><strong>Candidate Name:</strong> Your Name</p>
 
               <div className="flex justify-center mt-3">
                 <div className="w-24 h-28 bg-gray-200 rounded-md"></div>
@@ -110,21 +114,21 @@ export default function Dashboard() {
 
             {/* CONFIRM BUTTON WITH PERMISSION REQUEST */}
             <button
-  onClick={() => {
-    // Must wrap inside a direct click handler
-    navigator.mediaDevices
-      .getUserMedia({ video: true, audio: true })
-      .then(() => {
-        router.push("/instruction");
-      })
-      .catch(() => {
-        alert("Please allow camera and microphone to continue.");
-      });
-  }}
-  className="bg-green-600 w-full text-white p-2 mt-4 rounded-lg hover:bg-green-700 transition"
->
-  Confirm
-</button>
+              onClick={() => {
+                // Must wrap inside a direct click handler
+                navigator.mediaDevices
+                  .getUserMedia({ video: true, audio: true })
+                  .then(() => {
+                    router.push("/instruction");
+                  })
+                  .catch(() => {
+                    alert("Please allow camera and microphone to continue.");
+                  });
+              }}
+              className="bg-green-600 w-full text-white p-2 mt-4 rounded-lg hover:bg-green-700 transition"
+            >
+              Confirm
+            </button>
 
           </div>
         </div>
