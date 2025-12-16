@@ -128,9 +128,9 @@ export default function ExamUI_Yoga() {
   return (
     <div className="w-full min-h-screen bg-white flex flex-col">
       {/* Top Bar */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-3 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+      <div className="bg-linear-to-r from-blue-600 to-indigo-600 text-white p-3 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <h1 className="font-bold text-lg">Yoga Mock Test</h1>
+          <h1 className="font-bold text-lg">Ycb Mock Test</h1>
           <span className="text-sm opacity-90">(15 Questions · Yoga)</span>
         </div>
 
@@ -290,7 +290,7 @@ export default function ExamUI_Yoga() {
         </aside>
       </div>
 
-      <footer className="text-center text-xs text-gray-500 py-3">Good luck! • Yoga Mock Test</footer>
+      <footer className="text-center text-xs text-gray-500 py-3">Good luck! • Ycb Mock Test</footer>
     </div>
   );
 }
