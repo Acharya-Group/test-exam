@@ -15,16 +15,16 @@ return ( <nav className="w-full bg-[#1A4AF4] text-white px-4 py-3 flex items-cen
   {/* Desktop */}
   <div className="hidden md:flex items-center gap-6">
    <div className="flex gap-4">
-            <Link href="/about" className="hover:text-white">
+            <Link href="/about-us" className="hover:text-white">
               About
             </Link>
-            <Link href="/privacy" className="hover:text-white">
+            <Link href="/privacy-policy" className="hover:text-white">
               Privacy
             </Link>
-            <Link href="/Terms-Conditions" className="hover:text-white">
+            <Link href="/terms-conditions" className="hover:text-white">
               Terms
             </Link>
-            <Link href="/contact" className="hover:text-white">
+            <Link href="/contact-us" className="hover:text-white">
               Contact
             </Link>
             <Link href="/" className="hover:text-white">
@@ -42,16 +42,16 @@ return ( <nav className="w-full bg-[#1A4AF4] text-white px-4 py-3 flex items-cen
   {open && (
     <div className="absolute top-16 right-3 bg-white w-48 shadow-lg rounded-lg p-4 md:hidden text-black">
        <div className="flex flex-col gap-4">
-            <Link href="/about" className="hover:text-white">
+            <Link href="/about-us" className="hover:text-white">
               About
             </Link>
-            <Link href="/privacy" className="hover:text-white">
+            <Link href="/privacy-policy" className="hover:text-white">
               Privacy
             </Link>
-            <Link href="/Terms-Conditions" className="hover:text-white">
+            <Link href="/terms-conditions" className="hover:text-white">
               Terms
             </Link>
-            <Link href="/contact" className="hover:text-white">
+            <Link href="/contact-us" className="hover:text-white">
               Contact
             </Link>
             <Link href="/" className="hover:text-white">

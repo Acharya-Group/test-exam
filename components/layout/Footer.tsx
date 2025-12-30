@@ -21,16 +21,16 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex flex-wrap gap-4">
-            <Link href="/about" className="hover:text-white">
+            <Link href="/about-us" className="hover:text-white">
               About
             </Link>
-            <Link href="/privacy" className="hover:text-white">
+            <Link href="/privacy-policy" className="hover:text-white">
               Privacy
             </Link>
-            <Link href="/Terms-Conditions" className="hover:text-white">
+            <Link href="/terms-conditions" className="hover:text-white">
               Terms
             </Link>
-            <Link href="/contact" className="hover:text-white">
+            <Link href="/contact-us" className="hover:text-white">
               Contact
             </Link>
           </div>
