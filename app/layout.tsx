@@ -4,16 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import FooterWrapper from "@/components/layout/FooterWrapper";
 
 export const metadata: Metadata = {
   title: "Ycb demo exam portal",
@@ -30,9 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7565474923776604"
@@ -43,7 +32,8 @@ export default function RootLayout({
         {children}
 
         <Analytics />
-        <Toaster position="top-center" reverseOrder={false} />
+        <Toaster position="top-center" />
+        <FooterWrapper />
       </body>
     </html>
   );
